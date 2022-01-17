@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFVideoElementRegressionTest", "WPFVideoElementRegressionTest.csproj", "{BCD53655-550C-4366-99DF-AEA511674FD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCD53655-550C-4366-99DF-AEA511674FD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCD53655-550C-4366-99DF-AEA511674FD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCD53655-550C-4366-99DF-AEA511674FD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCD53655-550C-4366-99DF-AEA511674FD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72655BC9-DDB4-403B-8128-0F68527A97A2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+﻿<Window x:Class="WPFVideoElementRegressionTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFVideoElementRegressionTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <MediaElement x:Name="mediaElement" Margin="145,74,145,73" Source="Content/bbb_sunflower_1080p_30fps_normal_EDIT.mp4"/>
+
+    </Grid>
+</Window>
