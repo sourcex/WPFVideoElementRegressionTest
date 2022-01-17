@@ -10,7 +10,19 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <MediaElement x:Name="mediaElement" Margin="145,74,145,73" Source="Content/bbb_sunflower_1080p_30fps_normal_EDIT.mp4"/>
+        <MediaElement x:Name="mediaElement" Margin="145,74,145,73" >
+            <MediaElement.Triggers>
+                <EventTrigger RoutedEvent="MediaElement.Loaded">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <MediaTimeline Source="Content/bbb_sunflower_1080p_30fps_normal_EDIT.mp4" Storyboard.TargetName="mediaElement" RepeatBehavior="Forever" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </MediaElement.Triggers>
+        </MediaElement>
 
     </Grid>
 </Window>
