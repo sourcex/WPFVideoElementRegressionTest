@@ -29,7 +29,7 @@ namespace WPFVideoElementRegressionTest
             scrollingtextBox.Text = scrollingtextBox.Text + "Praesent tristique magna sit amet purus gravida. Sed arcu non odio euismod. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Quis ipsum suspendisse ultrices gravida dictum fusce ut. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Maecenas sed enim ut sem viverra aliquet eget sit. Viverra nam libero justo laoreet sit amet cursus. Cursus risus at ultrices mi tempus. At urna condimentum mattis pellentesque id nibh.  Sed viverra ipsum nunc aliquet bibendum enim.Cursus metus aliquam eleifend mi in. Tincidunt vitae semper quis lectus nulla at volutpat diam.Elit eget gravida cum sociis.Felis eget nunc lobortis mattis aliquam faucibus.In pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Tortor pretium viverra suspendisse potenti.Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Eget magna fermentum iaculis eu non. Neque convallis a cras semper.Arcu non odio euismod lacinia at quis risus sed vulputate. Commodo odio aenean sed adipiscing diam donec.Lobortis feugiat vivamus at augue eget arcu dictum. Ut placerat orci nulla pellentesque.";
             var timer = new DispatcherTimer();
             timer.Tick += Timer_Tick;
-            timer.Interval = new TimeSpan(0, 0, 0, 0, 200);
+            timer.Interval = new TimeSpan(0, 0, 0, 0, 50);
             timer.Start();
         }
 

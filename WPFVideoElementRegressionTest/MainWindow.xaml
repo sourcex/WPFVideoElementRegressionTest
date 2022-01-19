@@ -10,19 +10,20 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <MediaElement x:Name="mediaElement" Margin="145,74,145,73" IsMuted="True" >
+        <MediaElement x:Name="mediaElement" Margin="18,22,23,23" IsMuted="True" >
             <MediaElement.Triggers>
                 <EventTrigger RoutedEvent="MediaElement.Loaded">
                     <EventTrigger.Actions>
                         <BeginStoryboard>
                             <Storyboard>
-                                <MediaTimeline Source="Content/bbb_sunflower_1080p_30fps_normal_EDIT.mp4" Storyboard.TargetName="mediaElement" RepeatBehavior="Forever" />
+                                <MediaTimeline Source="Content/production ID_5084531.mp4" Storyboard.TargetName="mediaElement" RepeatBehavior="Forever" />
                             </Storyboard>
                         </BeginStoryboard>
                     </EventTrigger.Actions>
                 </EventTrigger>
             </MediaElement.Triggers>
         </MediaElement>
+        
         <TextBox x:Name="statictextBox" Background="Transparent" HorizontalAlignment="Left" Margin="116,90,0,0" TextWrapping="Wrap" Text="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." VerticalAlignment="Top" Width="120" />
         <TextBox x:Name="scrollingtextBox" Background="Transparent" HorizontalAlignment="Left" Margin="513,65,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="244" Height="147" />
 
