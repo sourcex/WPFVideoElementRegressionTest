@@ -10,13 +10,14 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <MediaElement x:Name="mediaElement" Margin="18,22,23,23" IsMuted="True" >
+        <MediaElement x:Name="mediaElement1" Margin="112,59,0,0" LoadedBehavior="Play" MediaEnded="mediaElement1_MediaEnded"></MediaElement>
+        <MediaElement x:Name="mediaElement" Margin="18,22,447,243" IsMuted="True" >
             <MediaElement.Triggers>
                 <EventTrigger RoutedEvent="MediaElement.Loaded">
                     <EventTrigger.Actions>
                         <BeginStoryboard>
                             <Storyboard>
-                                <MediaTimeline Source="Content/production ID_5084531.mp4" Storyboard.TargetName="mediaElement" RepeatBehavior="Forever" />
+                                <MediaTimeline Source="Content/production ID_5084531.mp4" Storyboard.TargetName="mediaElement" RepeatBehavior="2" />
                             </Storyboard>
                         </BeginStoryboard>
                     </EventTrigger.Actions>
