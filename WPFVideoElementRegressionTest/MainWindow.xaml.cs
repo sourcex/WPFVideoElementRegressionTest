@@ -46,10 +46,12 @@ namespace WPFVideoElementRegressionTest
 
         private void Timer_Tick(object? sender, EventArgs e)
         {
-            if (line == scrollingtextBox.LineCount)
+            //Add a pause at the end of the scroll relying on the fact that the textbox ignores a scroll it can't perform
+            if (line == scrollingtextBox.LineCount + 10)
             {
                 line = 0;
                 scrollingtextBox.ScrollToHome();
+                return;
             }
 
             scrollingtextBox.LineDown();
