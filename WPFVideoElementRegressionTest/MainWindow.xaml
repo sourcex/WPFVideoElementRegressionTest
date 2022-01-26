@@ -24,7 +24,7 @@
                 </EventTrigger>
             </MediaElement.Triggers>
         </MediaElement>-->
-
+        <Canvas x:Name="Canvas" Margin="278,111,0,0"></Canvas>
         <TextBox x:Name="statictextBox" Background="Transparent" HorizontalAlignment="Left" Margin="116,90,0,0" TextWrapping="Wrap" Text="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." VerticalAlignment="Top" Width="120" />
         <TextBox x:Name="scrollingtextBox" Background="Transparent" HorizontalAlignment="Left" Margin="546,65,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="244" Height="147" />
 
