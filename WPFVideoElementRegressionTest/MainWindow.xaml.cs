@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,7 +41,8 @@ namespace WPFVideoElementRegressionTest
 
         int line = 0;
         byte alpha = 0;
-
+        private readonly Stopwatch _stopwatch = new Stopwatch();
+        private double _frameCounter;
         int currentVideo = 0;
         List<string> Playlist = new List<string>
         {
@@ -52,7 +54,20 @@ namespace WPFVideoElementRegressionTest
 
         void UpdateCanvas(object sender, EventArgs e)
         {
-            if(alpha == byte.MaxValue)
+            if (_frameCounter++ == 0)
+            {
+                // Starting timing.
+                _stopwatch.Start();
+            }
+
+            var frameRate = (long)(_frameCounter / _stopwatch.Elapsed.TotalSeconds);
+            if (frameRate > 0)
+            {
+                // Update elapsed time, number of frames, and frame rate.
+                frameCounter.Content = frameRate.ToString();
+            }
+
+            if (alpha == byte.MaxValue)
             {
                 alpha = byte.MinValue;
             }
